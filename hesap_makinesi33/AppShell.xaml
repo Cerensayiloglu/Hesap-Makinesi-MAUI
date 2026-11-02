@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="hesap_makinesi33.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:hesap_makinesi33.view"
+    Title="hesap_makinesi33"> 
+
+    <ShellContent
+        Title="StandartPage"
+        ContentTemplate="{DataTemplate local:StandardPage}" 
+        Route="StandardPage" /> 
+    <ShellContent
+        Title="ScientificPage"
+        ContentTemplate="{DataTemplate local:ScientificPage}"
+        Route="ScientificPage" />
+    <ShellContent
+        Title="SettingsPage"
+        ContentTemplate="{DataTemplate local:SettingsPage}"
+        Route="SettingsPage" />
+
+</Shell>

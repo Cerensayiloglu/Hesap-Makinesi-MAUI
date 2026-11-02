@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hesap_makinesi33.view.StandardPage"
+             Title="Standard">
+    
+
+    <Grid RowDefinitions="Auto,*">
+        <Grid Grid.Row="0" 
+          RowDefinitions="Auto,Auto"
+          Padding="10">
+            
+            <Label 
+                x:Name="OperationLabel"
+                Text=""
+                Grid.Row="0"
+                FontSize="20"
+                HorizontalTextAlignment="End"
+                VerticalTextAlignment="Center"/>
+            <Label
+                x:Name="DisplayLabel"
+                Text="0"
+                Grid.Row="1"
+                FontSize="40"
+                HorizontalTextAlignment="End"
+                VerticalTextAlignment="Center"
+                Padding="20" /> 
+        </Grid>
+
+        <Grid
+            Grid.Row="1"
+            RowDefinitions="*,*,*,*,*,*"
+            ColumnDefinitions="*,*,*,*"
+            RowSpacing="8"
+            ColumnSpacing="8"
+            Padding="10">
+            <Button
+                Text="%"
+                Grid.Row="0"
+                Grid.Column="0"
+                Clicked="yuzdeClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+            />
+            <Button
+                Text="CE"
+                Grid.Row="0"
+                Grid.Column="1"
+                Clicked="CleargirilenClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+                />
+            <Button
+                Text="C"
+                Grid.Row="0"
+                Grid.Column="2"
+                Clicked="ClearClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+                />
+            <Button
+                Text="⌫"
+                Grid.Row="0"
+                Grid.Column="3"
+                Clicked="ClearadımClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+                />
+            <Button
+                Text="1/x"
+                Grid.Row="1"
+                Grid.Column="0"
+                Clicked="birboluxClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+            />
+            <Button
+                Text=" x²"
+                Grid.Row="1"
+                Grid.Column="1"
+                Clicked="kareusClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+            />
+            <Button
+                Text="√x"
+                Grid.Row="1"
+                Grid.Column="2"
+                Clicked="karekokClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+                />
+            <Button
+                Text="÷"
+                Grid.Row="1"
+                Grid.Column="3"
+                Clicked="OperatorClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+                /> 
+            <Button
+                Text="7"
+                Grid.Row="2"
+                Grid.Column="0" 
+                Clicked="NumberClicked"
+                Style="{StaticResource NumberButtonStyle}"
+            />  
+            <Button
+                Text="8"
+                Grid.Row="2"
+                Grid.Column="1"
+                Clicked="NumberClicked"
+                Style="{StaticResource NumberButtonStyle}"
+            />
+            <Button
+                Text="9"
+                Grid.Row="2"
+                Grid.Column="2"
+                Clicked="NumberClicked"
+                Style="{StaticResource NumberButtonStyle}"
+                />
+            <Button
+                Text="×"
+                Grid.Row="2"
+                Grid.Column="3"
+                Clicked="OperatorClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+                />
+            <Button
+                Text="4"
+                Grid.Row="3"
+                Grid.Column="0"
+                Clicked="NumberClicked"
+                Style="{StaticResource NumberButtonStyle}"
+            />
+            <Button
+                Text="5"
+                Grid.Row="3"
+                Grid.Column="1"
+                Clicked="NumberClicked"
+                Style="{StaticResource NumberButtonStyle}"
+            />
+            <Button
+                Text="6"
+                Grid.Row="3"
+                Grid.Column="2"
+                Clicked="NumberClicked"
+                Style="{StaticResource NumberButtonStyle}"
+                />
+            <Button
+                Text="-"
+                Grid.Row="3"
+                Grid.Column="3"
+                Clicked="OperatorClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+                />
+            <Button
+                Text="1"
+                Grid.Row="4"
+                Grid.Column="0"
+                Clicked="NumberClicked"
+                Style="{StaticResource NumberButtonStyle}"
+            />
+            <Button
+                Text="2"
+                Grid.Row="4"
+                Grid.Column="1"
+                Clicked="NumberClicked"
+                Style="{StaticResource NumberButtonStyle}"
+            />
+            <Button
+                Text="3"
+                Grid.Row="4"
+                Grid.Column="2"
+                Clicked="NumberClicked"
+                Style="{StaticResource NumberButtonStyle}"
+                />
+            <Button
+                Text="+"
+                Grid.Row="4"
+                Grid.Column="3"
+                Clicked="OperatorClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+                />
+
+            <Button
+                Text="+/-"
+                Grid.Row="5"
+                Grid.Column="0" 
+                Clicked="isaretClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+            />
+            <Button
+                Text="0"
+                Grid.Row="5"
+                Grid.Column="1"
+                Clicked="NumberClicked"
+                Style="{StaticResource NumberButtonStyle}"
+            />
+            <Button
+                Text=","
+                Grid.Row="5"
+                Grid.Column="2"
+                Clicked="virgulClicked"
+                Style="{StaticResource OperatorButtonStyle}"
+                />
+            <Button
+                Text="="
+                Grid.Row="5"
+                Grid.Column="3"
+                Clicked="CalculateClicked"
+                Style="{StaticResource EqualButtonStyle}" 
+                /> 
+        </Grid>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hesap_makinesi33.view.SettingsPage"
+             Title="Ayarlar">
+    <VerticalStackLayout
+        Padding="25"
+        Spacing="20"
+        >
+        
+        <Label Text="Görünüm"
+               Style="{StaticResource SectionTitleStyle}" />
+
+        <Label Text="Uygulama temasını seçin."
+               Style="{StaticResource DescriptionStyle}" />
+
+        <RadioButton
+                     x:Name="LightRadio"
+                     Content="Açık (Light)" 
+                     GroupName="Theme"
+                     Value="Light"
+                     CheckedChanged="ThemeChanged" />
+
+        <RadioButton 
+                     x:Name="DarkRadio"
+                     Content="Koyu (Dark)"
+                     GroupName="Theme"
+                     Value="Dark"
+                     CheckedChanged="ThemeChanged" />
+
+        <RadioButton 
+                     x:Name="SystemRadio"
+                     Content="Sistem ayarını kullan (Use system setting)"
+                     GroupName="Theme"
+                     Value="System"
+                     CheckedChanged="ThemeChanged" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
